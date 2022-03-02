@@ -1,3 +1,6 @@
 [submodule "third_p_repos/l_sim"]
 	path = third_p_repos/l_sim
 	url = https://github.com/hypoid/l_sim.git
+[submodule "third_p_repos/panda-gym"]
+	path = third_p_repos/panda-gym
+	url = https://github.com/qgallouedec/panda-gym
