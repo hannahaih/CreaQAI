@@ -21,6 +21,7 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 
 # quantum libs:
 pip install qiskit
+pip install kaleidoscope
 ```
 
 install 3rd party SDKs:
