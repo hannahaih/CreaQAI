@@ -1,0 +1,3 @@
+[submodule "third_p_repos/l_sim"]
+	path = third_p_repos/l_sim
+	url = https://github.com/hypoid/l_sim.git
