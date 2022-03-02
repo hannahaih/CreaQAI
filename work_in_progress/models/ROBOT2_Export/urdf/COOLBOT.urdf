@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="COOLBOT">
+
+    <link name="link_Cube">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.96"/>
+        <inertia ixx="0.42101" ixy="0" ixz="0" iyy="1.40485" iyz="0" izz="1.5154"/>
+      </inertial>
+      <visual name="Cube">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Cube.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="ROBOTSKIN"/>
+      </visual>
+      <collision name="Cube">
+        <origin xyz="0 0 0.52879" rpy="0 0 0"/>
+        <geometry>
+          <box size="4.0 2.2 1.45758"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link_Torus">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.96"/>
+        <inertia ixx="0.23237" ixy="0" ixz="0" iyy="0.44941" iyz="0" izz="0.23237"/>
+      </inertial>
+      <visual name="Torus">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Wheel"/>
+      </visual>
+      <collision name="Torus">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="1.0" length="0.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link_Torus.001">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.96"/>
+        <inertia ixx="0.23237" ixy="0" ixz="0" iyy="0.44941" iyz="0" izz="0.23237"/>
+      </inertial>
+      <visual name="Torus.001">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Wheel"/>
+      </visual>
+      <collision name="Torus.001">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="1.0" length="0.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link_Torus.002">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.96"/>
+        <inertia ixx="0.23237" ixy="0" ixz="0" iyy="0.44941" iyz="0" izz="0.23237"/>
+      </inertial>
+      <visual name="Torus.002">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.002.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Wheel"/>
+      </visual>
+      <collision name="Torus.002">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="1.0" length="0.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link_Torus.003">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.96"/>
+        <inertia ixx="0.23237" ixy="0" ixz="0" iyy="0.44941" iyz="0" izz="0.23237"/>
+      </inertial>
+      <visual name="Torus.003">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.003.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Wheel"/>
+      </visual>
+      <collision name="Torus.003">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="1.0" length="0.4"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="link_Torus" type="continuous">
+      <origin xyz="1.47 -1.4 0" rpy="0 0 0"/>
+      <parent link="link_Cube"/>
+      <child link="link_Torus"/>
+      <axis xyz="0 -1.0 0"/>
+      <limit effort="2.4" velocity="1.02"/>
+    </joint>
+
+    <joint name="link_Torus.001" type="continuous">
+      <origin xyz="1.47 1.4 0" rpy="0 0 0"/>
+      <parent link="link_Cube"/>
+      <child link="link_Torus.001"/>
+      <axis xyz="0 1.0 0"/>
+      <limit effort="2.4" velocity="1.02"/>
+    </joint>
+
+    <joint name="link_Torus.002" type="continuous">
+      <origin xyz="-1.47 -1.4 0" rpy="0 0 0"/>
+      <parent link="link_Cube"/>
+      <child link="link_Torus.002"/>
+      <axis xyz="0 -1.0 0"/>
+      <limit effort="2.4" velocity="1.02"/>
+    </joint>
+
+    <joint name="link_Torus.003" type="continuous">
+      <origin xyz="-1.47 1.4 0" rpy="0 0 0"/>
+      <parent link="link_Cube"/>
+      <child link="link_Torus.003"/>
+      <axis xyz="0 1.0 0"/>
+      <limit effort="2.4" velocity="1.02"/>
+    </joint>
+
+    <material name="ROBOTSKIN">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Wheel">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+  </robot>
