@@ -4,5 +4,5 @@
 
 ## Contents
 
-[forks of 3rd party repos:]()
+[forks of 3rd party repos:](https://github.com/hannahaih/CreaQAI/tree/main/third_p_repos)
 - [l_sim](https://github.com/hypoid/l_sim)
