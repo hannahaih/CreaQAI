@@ -4,3 +4,12 @@
 [submodule "third_p_repos/panda-gym"]
 	path = third_p_repos/panda-gym
 	url = https://github.com/qgallouedec/panda-gym
+[submodule "third_party/phobos"]
+	path = third_party/phobos
+	url = https://github.com/dfki-ric/phobos
+[submodule "third_party/l_sim"]
+	path = third_party/l_sim
+	url = https://github.com/hypoid/l_sim.git
+[submodule "third_party/panda-gym"]
+	path = third_party/panda-gym
+	url = https://github.com/qgallouedec/panda-gym.git
