@@ -12,7 +12,7 @@ conda activate qcml
 pip installs:
 ```
 # panda3d & gym libs:
-pip install panda-gym
+pip install panda-gym[extra]
 pip install panda3d==1.10.11
 
 # torch & tf libs with cuda:
