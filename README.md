@@ -30,7 +30,7 @@ install 3rd party SDKs:
 
 ## Repo Contents
 
-#### forks of 3rd party repos and SDKs from:
+#### 3rd party repos:
 - [l_sim repo](https://github.com/hypoid/l_sim)
 - [panda-gym repo](https://github.com/qgallouedec/panda-gym)
 - [phobos repo](https://github.com/dfki-ric/phobos)
