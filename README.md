@@ -27,6 +27,16 @@ install 3rd party SDKs:
 - [panda3d SDK](https://www.panda3d.org/)
 - [blender SDK](https://www.blender.org/download/)
 
+test installation:
+- run [panda-gym render example](https://github.com/qgallouedec/panda-gym/blob/cbbe9deb85f53d6f4f805917781857cdce0af957/examples/rgb_rendering.py)
+- run [follow example](https://github.com/hannahaih/CreaQAI/blob/main/work_in_progress/scripts/follow.py) and try different models (line 92)
+```
+Actor("../models/slug2smaller",
+            {"run":"../models/slug2smaller-MOVE",
+             "walk":"../models/slug2smaller-MOVE"})
+```
+             
+
 
 ## Repo Contents
 
