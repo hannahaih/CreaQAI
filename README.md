@@ -23,14 +23,17 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 pip install qiskit
 ```
 
+install 3rd party SDKs:
+- [panda3d SDK](https://www.panda3d.org/)
+- [blender SDK](https://www.blender.org/download/)
+
+
 ## Repo Contents
 
 #### forks of 3rd party repos and SDKs from:
 - [l_sim repo](https://github.com/hypoid/l_sim)
 - [panda-gym repo](https://github.com/qgallouedec/panda-gym)
-- [panda3d SDK](https://www.panda3d.org/)
-- [blender SDK](https://www.blender.org/download/)
-- [phobos repo](git submodule add https://github.com/dfki-ric/phobos)
+- [phobos repo](https://github.com/dfki-ric/phobos)
 
 # Further Information
 
