@@ -1,10 +1,10 @@
-to run scripts from cmd
+to run scripts from cmd:
 
 ```
 ppython scriptname.py
 ```
 
-or 
+or: 
 
 ```
 python scriptname.py
